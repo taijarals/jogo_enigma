@@ -53,7 +53,7 @@ menu = st.sidebar.selectbox("Menu", ["Visualizar", "Criar", "Atualizar", "Deleta
 if menu == "Visualizar":
     st.subheader("Lista de Jogadores")
     df = read_jogadores()
-    st.dataframe(df, use_container_width=True)
+    st.dataframe(df, width='stretch')
 
 # -----------------------------
 # CRIAR
