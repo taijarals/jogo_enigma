@@ -5,10 +5,10 @@ from supabase import create_client, Client
 # -----------------------------
 # CONFIG SUPABASE
 # -----------------------------
-SUPABASE_URL = "https://SEU_PROJETO.supabase.co"
-SUPABASE_KEY = "SUA_CHAVE_PUBLICA"
+SUPABASE_URL = st.secrets["SUPABASE_URL"]
+SUPABASE_KEY = st.secrets["SUPABASE_KEY"]
 
-supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
+supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 # -----------------------------
 # FUNÇÕES CRUD
